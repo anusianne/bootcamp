@@ -4,21 +4,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fefee3;
+  background-color: #fefae0;
 }
 
 #start {
   text-decoration: none;
   color: black;
-  font-size: 30px;
-  padding: 15px;
+  font-size: 2em;
+  padding: 1em;
   border: 2px solid black;
   border-radius: 15px;
-  box-shadow: 10px 5px 5px grey;
+  box-shadow: 10px 5px 5px #403d39;
+  transition: all 0.35s;
 }
 
 #start:hover {
-  border-color: #880d1e;
-  color: #880d1e;
+  border-color: #606c38;
+  color: #606c38;
   transform: translateX(0.15em);
 }
