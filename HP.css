@@ -3,8 +3,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #fefae0;
+  height: 100%;
+  background-image: url("paper.jpg");
+  margin: 30em;
 }
 
 #start {
@@ -16,10 +17,12 @@ body {
   border-radius: 15px;
   box-shadow: 10px 5px 5px #403d39;
   transition: all 0.35s;
+  background-color: rgba(235, 235, 235, 0.2);
 }
 
 #start:hover {
-  border-color: #606c38;
-  color: #606c38;
+  border-color: #dad7cd;
+  color: #dad7cd;
   transform: translateX(0.15em);
+  text-shadow: 1px 1px black;
 }
