@@ -1,0 +1,24 @@
+body {
+  font-family: "Windsong", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fefee3;
+}
+
+#start {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+#start:hover {
+  border-color: #880d1e;
+  color: #880d1e;
+  transform: translateX(0.15em);
+}
