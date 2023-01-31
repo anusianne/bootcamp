@@ -20,19 +20,22 @@ h1, h2 {
     border: 1px solid black;
     border-radius: 20px;
     padding: 30px;
+    margin: 30px;
 }
 
 #twop {
 border: 2px solid grey;
 border-radius: 15px;
-padding-left: 30px;
-padding-right: 30px;
+padding: 30px;
+margin:30px;
+
 }
 
 #oneid {
     border: 1px solid greenyellow;
     border-radius: 10px;
     padding: 30px;
+    margin: 30px;
 }
 
 a {
@@ -42,10 +45,19 @@ color: black;
 
 p, div {
     line-height: 2;
-    width: 200px;
+    width: 250px;
     height: 700px;
 }
 
 hr {
-    width: 85%;
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 800px;
+    justify-content: space-around;
+    
 }
