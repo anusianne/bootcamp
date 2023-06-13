@@ -9,3 +9,9 @@ const li = document.querySelectorAll("li");
 li.forEach((li) => {
   li.classList.toggle("highlight");
 });
+
+const div = document.getElementById("container");
+for (let i = 0; i < 100; i++) {
+  const btn = div.appendChild(document.createElement("button"));
+  btn.innerText = "Hello";
+}
