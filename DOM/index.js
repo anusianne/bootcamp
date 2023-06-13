@@ -4,3 +4,8 @@ const allSpans = document.querySelectorAll("span");
 for (let i = 0; i < colors.length; i++) {
   allSpans[i].style.color = colors[i];
 }
+
+const li = document.querySelectorAll("li");
+li.forEach((li) => {
+  li.classList.toggle("highlight");
+});
