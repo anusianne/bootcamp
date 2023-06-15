@@ -15,3 +15,15 @@ for (let i = 0; i < 100; i++) {
   const btn = div.appendChild(document.createElement("button"));
   btn.innerText = "Hello";
 }
+
+const form = document.querySelector("form");
+const quantity = document.querySelector("#qty");
+const product = document.querySelector("#product");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const qty = quantity.value;
+  const productName = product.value;
+  const productList = document.createElement("li");
+  productList.innerText = qty + " " + productName;
+  list.append(productList);
+});
