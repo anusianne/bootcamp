@@ -27,3 +27,12 @@ form.addEventListener("submit", (e) => {
   productList.innerText = qty + " " + productName;
   list.append(productList);
 });
+
+const user = document.getElementById("username");
+const h2 = document.querySelector("h2");
+user.addEventListener("input", (e) => {
+  h2.innerText = "Welcome" + ", " + user.value;
+  if (user.value === "") {
+    h2.innerText = "Enter Your Username";
+  }
+});
