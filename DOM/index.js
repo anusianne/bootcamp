@@ -26,4 +26,5 @@ form.addEventListener("submit", (e) => {
   const productList = document.createElement("li");
   productList.innerText = qty + " " + productName;
   list.append(productList);
+  form.reset();
 });
