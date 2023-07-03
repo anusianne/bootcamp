@@ -3,6 +3,7 @@ let pl2 = document.getElementById("pl2");
 let pl1Display = document.getElementById("pl1Display");
 let pl2Display = document.getElementById("pl2Display");
 let resetBtn = document.getElementById("reset");
+let scoreSelect = document.getElementById("scoreSelect");
 
 let pl1Score = 0;
 let pl2Score = 0;
@@ -18,7 +19,6 @@ pl1.addEventListener("click", () => {
     pl1Display.textContent = pl1Score;
   }
 });
-
 pl2.addEventListener("click", () => {
   if (!isGameOver) {
     pl2Score += 1;
@@ -28,8 +28,17 @@ pl2.addEventListener("click", () => {
     pl2Display.textContent = pl2Score;
   }
 });
+scoreSelect.addEventListener("change", function () {
+  winningScore = parseInt(this.value);
+  reset();
+});
 
-resetBtn.addEventListener("click", () => {
+resetBtn.addEventListener("click", reset);
+
+function reset() {
+  isGameOver = false;
+  pl1Score = 0;
+  pl2Score = 0;
   pl1Display.textContent = 0;
   pl2Display.textContent = 0;
-});
+}
