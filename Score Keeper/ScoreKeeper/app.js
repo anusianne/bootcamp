@@ -29,6 +29,7 @@ pl2.addEventListener("click", () => {
   }
 });
 
-function resetButton() {
-  resetBtn.reset();
-}
+resetBtn.addEventListener("click", () => {
+  pl1Display.textContent = 0;
+  pl2Display.textContent = 0;
+});
