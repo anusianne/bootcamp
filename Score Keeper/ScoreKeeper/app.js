@@ -17,6 +17,8 @@ pl1.addEventListener("click", () => {
       isGameOver = true;
       pl1Display.classList.add("winner");
       pl2Display.classList.add("loser");
+      pl1.disabled = true;
+      pl2.disabled = true;
     }
     pl1Display.textContent = pl1Score;
   }
@@ -28,6 +30,8 @@ pl2.addEventListener("click", () => {
       isGameOver = true;
       pl2Display.classList.add("winner");
       pl1Display.classList.add("loser");
+      pl1.disabled = true;
+      pl2.disabled = true;
     }
     pl2Display.textContent = pl2Score;
   }
@@ -48,4 +52,6 @@ function reset() {
   pl2Display.textContent = 0;
   pl1Display.classList.remove("winner", "loser");
   pl2Display.classList.remove("loser", "winner");
+  pl1.disabled = false;
+  pl2.disabled = false;
 }
