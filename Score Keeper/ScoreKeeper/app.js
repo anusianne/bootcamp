@@ -15,6 +15,8 @@ pl1.addEventListener("click", () => {
     pl1Score += 1;
     if (pl1Score === winningScore) {
       isGameOver = true;
+      pl1Display.classList.add("winner");
+      pl2Display.classList.add("loser");
     }
     pl1Display.textContent = pl1Score;
   }
@@ -24,12 +26,15 @@ pl2.addEventListener("click", () => {
     pl2Score += 1;
     if (pl2Score === winningScore) {
       isGameOver = true;
+      pl2Display.classList.add("winner");
+      pl1Display.classList.add("loser");
     }
     pl2Display.textContent = pl2Score;
   }
 });
 scoreSelect.addEventListener("change", function () {
   winningScore = parseInt(this.value);
+
   reset();
 });
 
@@ -41,4 +46,6 @@ function reset() {
   pl2Score = 0;
   pl1Display.textContent = 0;
   pl2Display.textContent = 0;
+  pl1Display.classList.remove("winner", "loser");
+  pl2Display.classList.remove("loser", "winner");
 }
