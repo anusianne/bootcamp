@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+#container {
+    margin: 0 auto;
+    width: 95%;
+    height: 1000px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+}
+.box {
+    padding-top: 35px;
+    font-size: 1.5rem;
+}
