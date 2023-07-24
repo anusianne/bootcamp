@@ -3,13 +3,47 @@ body {
 }
 #container {
     margin: 0 auto;
-    width: 95%;
+    width: 1000px;
     height: 1000px;
     border: 3px solid black;
     display: grid;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: "header"
+    "nav"
+    "main"
+    "sidebar"
+    "advertising"
+    "footer";
+   grid-gap: 20px;
+
 }
 .box {
     padding-top: 35px;
     font-size: 1.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+grid-area: header;
+}
+li {
+    list-style: none;
+}
+.nav {
+grid-area: nav;
+
+}
+.main {
+grid-area: main;
+
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.advertising {
+    grid-area: advertising;
+}
+.footer {
+    grid-area: footer;
 }
