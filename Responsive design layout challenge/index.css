@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.parent{
+background-color: #584F84;
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+}
+.child {
+background-color: #876A96;
+    width: 50%;
+    height: 250px;
+}
