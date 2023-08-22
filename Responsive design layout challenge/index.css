@@ -1,17 +1,22 @@
+/*
+ * 2) Stop the text from overflowing
+ *    out the bottom at small screen
+ *    widths
+ */
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
+    font-family: sans-serif;
 }
-.parent{
-background-color: #584F84;
+.container {
+    background: #23424a;
+    color: white;
+    width: 80%;
     margin: 0 auto;
-    padding: 50px;
-    width: 100%;
+    padding: 2em;
 }
-.child {
-background-color: #876A96;
+.intro-content {
     width: 50%;
-    height: 250px;
 }
