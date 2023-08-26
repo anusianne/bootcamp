@@ -13,7 +13,7 @@ body {
   background: #23424a;
 }
 .text-part {
-  width: 40%;
+  max-width: 750px;
 }
 .heading1 {
   font-size: 3rem;
