@@ -3,19 +3,38 @@
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .container {
-  background: #23424a;
   color: white;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
   padding: 2em 5em 2em 10em;
+  background: #23424a;
 }
-.intro-content {
-  width: 50%;
+.text-part {
+  width: 40%;
 }
-.more-content {
-  padding: 0 5em 2em 10em;
-  max-width: 1000px;
+.heading1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.lorem1 {
+  margin-top: 20px;
+  padding-bottom: 2em;
+}
+.lorem1,
+.btn {
+  font-size: 1.5rem;
+}
+.btn {
+  background-color: #38cfd9;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #072a2d;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: inline-block;
 }
