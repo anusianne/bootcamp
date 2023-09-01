@@ -38,3 +38,20 @@ body {
   border-radius: 30px;
   display: inline-block;
 }
+.titles {
+  color: #87629a;
+}
+.row {
+  display: flex;
+  margin: 0 200px 0 200px;
+  text-align: center;
+}
+.col {
+  width: 100%;
+}
+.darker {
+  background-color: #136c72;
+  color: white;
+  width: 100%;
+  display: flex;
+}
