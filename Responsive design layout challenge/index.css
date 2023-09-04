@@ -50,8 +50,11 @@ body {
   width: 100%;
 }
 .darker {
-  background-color: #136c72;
+  background: #136c72;
   color: white;
   width: 100%;
   display: flex;
+  padding: 3em 0;
+  text-align: center;
+  padding: 2em 5em 2em 10em;
 }
