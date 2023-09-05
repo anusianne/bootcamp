@@ -1,3 +1,10 @@
+/* 
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+*/
 *,
 *::before,
 *::after {
@@ -8,12 +15,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
-img {
-  max-width: 100%;
-}
 h1 {
   font-size: 3rem;
   margin-top: 0;
+}
+img {
+  max-width: 100%;
 }
 .container {
   width: 80%;
@@ -23,12 +30,8 @@ h1 {
 .row {
   display: flex;
   justify-content: space-between;
-}
-.col {
-  width: 100%;
-}
-.col + .col {
-  margin-left: 30px;
+  /* can't use yet */
+  /* gap: 100px; */
 }
 .hero {
   padding: 100px 0;
@@ -37,13 +40,6 @@ h1 {
 }
 .hero__text {
   width: 62%;
-}
-.hero__img {
-  width: 32%;
-  align-self: flex-start;
-}
-.hero p {
-  margin-bottom: 3em;
 }
 .btn {
   display: inline-block;
@@ -58,4 +54,11 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
+}
+.left h2 {
+  color: #136c72;
+}
+.right {
+  background: #136c72;
+  color: white;
 }
