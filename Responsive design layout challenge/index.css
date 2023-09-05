@@ -1,10 +1,3 @@
-/* 
-1. Refer to the design specs for the
-   overall layout 
-2. The image should line up with
-   the sidebar in the section
-   below
-*/
 *,
 *::before,
 *::after {
@@ -30,8 +23,7 @@ img {
 .row {
   display: flex;
   justify-content: space-between;
-  /* can't use yet */
-  /* gap: 100px; */
+  gap: 100px;
 }
 .hero {
   padding: 100px 0;
@@ -55,10 +47,22 @@ img {
 .btn:focus {
   opacity: 0.75;
 }
+.left {
+  width: 50%;
+}
 .left h2 {
   color: #136c72;
 }
+.right p {
+  max-width: 100%;
+}
 .right {
+  width: 40%;
   background: #136c72;
   color: white;
+  text-align: center;
+  padding: 4em;
+}
+.col {
+  margin-top: 2em;
 }
