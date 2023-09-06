@@ -89,6 +89,9 @@ header {
   display: flex;
   align-items: center;
 }
+.nav__list--primary {
+  margin: 0 auto;
+}
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
