@@ -11,7 +11,20 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="hero">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--button">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
       <div class="container row">
         <div class="hero__text">
           <h1>Responsive layouts don’t have to be a struggle</h1>
@@ -24,7 +37,7 @@
         </div>
         <img class="img" src="hero-img.jpg" alt="" />
       </div>
-    </header>
+    </section>
     <main class="main container row">
       <section class="col primary-content">
         <h2 class="section-title">
