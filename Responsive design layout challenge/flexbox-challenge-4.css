@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
-/*!font-family: 'Playfair Display', serif; 
-font-family: 'Roboto', sans-serif;
-*/
+.header {
+  background-color: #f3eed9;
+  min-height: 660px;
+}
+.header h1 {
+  color: #824936;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1em;
+}
+.header h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #222c2a;
+  text-transform: uppercase;
+}
+.title {
+  padding: 18.5em 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
