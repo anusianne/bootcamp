@@ -3,7 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
 .header {
   background-color: #f3eed9;
   min-height: 660px;
@@ -30,4 +33,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.main {
+  background-color: #fff;
+}
+.main h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #824936;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.main p {
+  color: #222c2a;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+}
+.descript {
+  display: flex;
+  gap: 5em;
+  padding-bottom: 5em;
+}
+.p1 {
+  width: 600px;
+}
+.p2 {
+  width: 600px;
 }
