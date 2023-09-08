@@ -109,3 +109,17 @@ header {
 .nav__item--push-right {
   margin-left: auto;
 }
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+  .hero__text,
+  .img,
+  .primary-content,
+  .sidebar {
+    width: 100%;
+  }
+  .img {
+    margin-top: 2em;
+  }
+}
