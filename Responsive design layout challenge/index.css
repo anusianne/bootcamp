@@ -147,10 +147,10 @@ header {
   .nav {
     visibility: visible;
     display: flex;
-    height: auto;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    justify-content: flex-end;
+    padding-top: 1.5em;
   }
   .nav__list {
     display: flex;
@@ -165,6 +165,12 @@ header {
   .row {
     display: flex;
     justify-content: space-between;
+  }
+  .sign--up-btn {
+    background-color: #fff;
+    color: #136c72;
+    padding: 0.25em 0.75em;
+    border-radius: 100px;
   }
   .hero__text {
     width: 62%;
