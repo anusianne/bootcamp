@@ -52,10 +52,14 @@ h1 {
   font-size: 24px;
   font-family: "Oswald", sans-serif;
 }
+.first-part,
+.second-part,
+.left-side {
+  padding: 1em;
+  text-align: center;
+}
 .first-part {
   background-color: #efe9e5;
-  padding: 2em;
-  text-align: center;
 }
 .first-part h3 {
   color: #a59678;
@@ -66,6 +70,18 @@ h1 {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 1em;
+}
+.second-part h2 {
+  color: #a59678;
+  font-size: 36px;
+}
+.second-part p {
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  padding: 1em;
+  margin: 0 auto;
 }
 .container {
   width: 100%;
