@@ -6,6 +6,19 @@
 body {
   font-family: "Oswald", sans-serif;
 }
+h1 {
+  color: white;
+  font-size: 90px;
+  line-height: 1.05em;
+  text-align: center;
+}
+.span_1 {
+  color: #a59678;
+}
+.main {
+  padding: 5em 1em;
+  background: #3b4050;
+}
 .logo {
   height: 30px;
   margin-left: 0.75em;
@@ -19,6 +32,27 @@ body {
 }
 .header {
   background-color: #2e323f;
+}
+.main_p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  display: flex;
+}
+.btn_p {
+  cursor: pointer;
+  background-color: #a59678;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.25em 1.25em;
+  border-radius: 100px;
+  border: none;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
 }
 .container {
   width: 100%;
