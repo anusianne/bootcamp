@@ -54,7 +54,8 @@ h1 {
 }
 .first-part,
 .second-part,
-.left-side {
+.left-side,
+.footer {
   padding: 1em;
   text-align: center;
 }
@@ -138,4 +139,28 @@ img {
   background-color: #a59678;
   border-radius: 100px;
   padding: 4px 8px;
+}
+.footer {
+  background: #3b4050;
+}
+.footer h2 {
+  color: #fff;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.footer h4 {
+  color: #a59678;
+  padding: 0.75em;
+}
+.footer a,
+.footer p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #6f737f;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
 }
