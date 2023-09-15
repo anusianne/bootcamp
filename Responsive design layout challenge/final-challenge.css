@@ -24,8 +24,6 @@ h1 {
   margin-left: 0.75em;
 }
 .container {
-  display: flex;
-  flex-direction: row;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -53,6 +51,21 @@ h1 {
   margin: 0 auto;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
+}
+.first-part {
+  background-color: #efe9e5;
+  padding: 2em;
+  text-align: center;
+}
+.first-part h3 {
+  color: #a59678;
+  font-size: 30px;
+  padding: 0.5em;
+}
+.first-part p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 1em;
 }
 .container {
   width: 100%;
