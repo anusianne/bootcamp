@@ -80,8 +80,26 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 img {
-  padding: 1em;
   margin: 0 auto;
+}
+.one,
+.two,
+.three {
+  background-color: #3b4050;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+.right-side h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  padding: 0.5em;
+}
+.right-side p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding-bottom: 1em;
 }
 .container {
   width: 100%;
