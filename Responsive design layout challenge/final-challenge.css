@@ -147,6 +147,7 @@ img {
   color: #fff;
   font-family: "Oswald";
   font-weight: bold;
+  font-size: 34px;
 }
 .footer h4 {
   color: #a59678;
@@ -163,4 +164,79 @@ img {
   font-size: 16px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .nav_toggle {
+    display: none;
+  }
+  .nav,
+  .row,
+  .nav_list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav {
+    padding: 0.5em 0;
+  }
+  .primary_nav {
+    padding-left: 20em;
+  }
+  .li_list {
+    padding-left: 2em;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .column {
+    padding-top: 12em;
+  }
+  .btn_p {
+    margin-left: 0;
+  }
+  .main_p {
+    padding: 2em 0;
+    line-height: 1.05em;
+  }
+  h1,
+  .left-side,
+  .main_p {
+    text-align: left;
+  }
+  .first-part {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+  }
+  .first-part p,
+  .first-part h3 {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+  }
+  .first-part h3 {
+    display: block;
+    margin: 0 auto;
+  }
+  .left-side p,
+  .left-side h2,
+  img {
+    padding-top: 1em;
+  }
+  .right-side,
+  .footer {
+    padding: 4em 2em;
+  }
+  .footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .about {
+    width: 40%;
+  }
+  h4 {
+    text-align: center;
+  }
 }
