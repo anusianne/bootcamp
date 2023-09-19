@@ -29,18 +29,19 @@ body {
   color: white;
   border-radius: 5px;
   font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  transition: all 0.08s;
+  background: rgba(248, 55, 87, 0.1);
+  transition: all 0.09s;
 }
 .sound {
   text-align: center;
-  color: yellow;
+  color: rgb(248, 55, 87);
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 0.95rem;
   padding-top: 0.5em;
 }
 .playing {
   transform: scale(2);
-  border-color: yellow;
-  box-shadow: 0 0 10px yellow;
+  border-color: rgb(248, 55, 87);
+  box-shadow: 0 0 10px rgb(248, 55, 87);
 }
