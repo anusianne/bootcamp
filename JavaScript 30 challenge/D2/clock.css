@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 10em;
+  background-color: cadetblue;
+}
+.circle {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 20px solid wheat;
+  position: relative;
+}
+.hand {
+  width: 50%;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transition: all 0.5s;
+  transform: rotate(90deg);
+}
