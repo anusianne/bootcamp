@@ -107,11 +107,12 @@ console.log(
     return a - b;
   })
 );
-// 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-// 7. sort Exercise
+// 6. sort Exercise
 // Sort the people alphabetically by last name
-
-// 8. Reduce Exercise
+const lastNameArr = inventors.map((inventor) => {
+  return inventor.last;
+});
+console.log(lastNameArr.sort());
+// 7. Reduce Exercise
 // Sum up the instances of each of these
