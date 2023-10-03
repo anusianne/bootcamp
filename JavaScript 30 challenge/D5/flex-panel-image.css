@@ -16,6 +16,7 @@ body {
 .panels {
   min-height: 100vh;
   overflow: hidden;
+  display: flex;
 }
 .panel {
   background: #6b0f9c;
