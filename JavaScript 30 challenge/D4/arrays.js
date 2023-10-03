@@ -107,12 +107,9 @@ console.log(
     return a - b;
   })
 );
-
 // 6. sort Exercise
 // Sort the people alphabetically by last name
 const lastNameArr = inventors.map((inventor) => {
   return inventor.last;
 });
 console.log(lastNameArr.sort());
-// 7. Reduce Exercise
-// Sum up the instances of each of these
