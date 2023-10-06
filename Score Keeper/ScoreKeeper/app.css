@@ -1,6 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .winner {
   color: pink;
 }
 .loser {
   color: blue;
+}
+.container {
+  display: flex;
+  margin-top: 20em;
+}
+.score-side {
+  margin: 0 auto;
 }
