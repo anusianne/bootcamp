@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.header {
+  margin: 1em;
+}
 .winner {
   color: pink;
 }
@@ -12,6 +15,9 @@
 .container {
   display: flex;
   margin-top: 20em;
+}
+.scores {
+  border: 2px solid red;
 }
 .score-side {
   margin: 0 auto;
