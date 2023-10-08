@@ -12,9 +12,18 @@ const comments = [
   { text: "Nice Nice Nice", id: 542328 },
 ];
 // ! checking if somebody of people arr is adult
-const checkAge = people.some((person) => {
-  if (2023 - person.year >= 19) {
+const checkAge = people.some(function (person) {
+  const currentYear = new Date().getFullYear();
+  if (currentYear - person.year >= 19) {
     return true;
   }
 });
 console.log(checkAge);
+
+const isEveryoneAdult = people.every((person) => {
+  const currentYear = new Date().getFullYear();
+  if (currentYear - person.name >= 19) {
+    return true;
+  }
+});
+console.log(isEveryoneAdult);
