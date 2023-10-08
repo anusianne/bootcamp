@@ -19,7 +19,7 @@ const checkAge = people.some(function (person) {
   }
 });
 console.log(checkAge);
-
+// ! checking if every person in people array is an adult
 const isEveryoneAdult = people.every((person) => {
   const currentYear = new Date().getFullYear();
   if (currentYear - person.name >= 19) {
@@ -27,3 +27,10 @@ const isEveryoneAdult = people.every((person) => {
   }
 });
 console.log(isEveryoneAdult);
+
+const foundComment = comments.find((comment) => {
+  if (comment.id === 823423) {
+    return comment;
+  }
+});
+console.log(foundComment.text);
