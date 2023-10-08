@@ -27,10 +27,17 @@ const isEveryoneAdult = people.every((person) => {
   }
 });
 console.log(isEveryoneAdult);
-
+// ! finding the comment with a specific id
 const foundComment = comments.find((comment) => {
+  if (comment.id === 823423) {
+    return true;
+  }
+});
+console.log(foundComment.text);
+// !
+const foundIndex = comments.findIndex((comment) => {
   if (comment.id === 823423) {
     return comment;
   }
 });
-console.log(foundComment.text);
+console.log(foundIndex);
