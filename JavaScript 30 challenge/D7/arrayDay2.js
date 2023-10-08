@@ -11,3 +11,10 @@ const comments = [
   { text: "Ramen in my fav food ever", id: 123523 },
   { text: "Nice Nice Nice", id: 542328 },
 ];
+// ! checking if somebody of people arr is adult
+const checkAge = people.some((person) => {
+  if (2023 - person.year >= 19) {
+    return true;
+  }
+});
+console.log(checkAge);
