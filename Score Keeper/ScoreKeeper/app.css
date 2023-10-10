@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body {
+  background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
 .header {
   margin: 1em;
 }
