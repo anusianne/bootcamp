@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let width = 10;
   let squares = [];
   let isGameOver = false;
-  const bomb_Amount = 20;
+  let bombAmount = 20;
   //create a board
   function createBoard() {
     //random bombs
@@ -86,10 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (total != 0) {
         square.classList.add("checked");
         square.innerHTML = total;
+        return;
       }
-      square.classList.add("checked");
+      checkSquare(square, currentId);
     }
-    checkSquare(square, currentId);
+    square.classList.add("checked");
   }
 
   // check neighboring squares ine square is checked
@@ -108,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         click(newSquare);
       }
       if (currentId > 10) {
-        const newId = squares[parseInt(currentId) - width].id;
+        const newId = squares[parseInt(currentId - width)].id;
         const newSquare = document.getElementById(newId);
         click(newSquare);
       }
@@ -142,8 +143,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function gameOver(square) {
     console.log("game over");
     isGameOver = true;
+    // show all bombs
     squares.forEach((square) => {
-      square.innerHTML = "booom";
+      if (square.classList.contains("bomb")) {
+        square.innerHTML = "booom";
+      }
     });
   }
 });
