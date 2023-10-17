@@ -170,6 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square.innerHTML = "💀";
       }
     });
+    window.location.reload();
   }
   //check for win
   function checkForWin() {
