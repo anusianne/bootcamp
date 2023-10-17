@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
       square.addEventListener("click", function () {
         click(square);
       });
-
       //flag click
       square.oncontextmenu = function (e) {
         e.preventDefault();
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-
   //click on square actions
   function click(square) {
     let currentId = square.id;
@@ -116,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     square.classList.add("checked");
   }
-
   // check neighboring squares ine square is checked
   function checkSquare(square, currentId) {
     const isLeftEdge = currentId % width === 0;
@@ -169,6 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // show all bombs
     squares.forEach((square) => {
       if (square.classList.contains("bomb")) {
+        square.style.backgroundColor = "red";
         square.innerHTML = "💀";
       }
     });

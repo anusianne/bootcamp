@@ -4,6 +4,7 @@
   height: 400px;
   flex-wrap: wrap;
   background-color: grey;
+  border: 1px solid black;
 }
 .grid div {
   height: 40px;
@@ -13,5 +14,4 @@
   background-color: green;
 }
 .bomb {
-  background-color: red;
 }
