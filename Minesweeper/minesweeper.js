@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // show all bombs
     squares.forEach((square) => {
       if (square.classList.contains("bomb")) {
-        square.innerHTML = "booom";
+        square.innerHTML = "💀";
       }
     });
   }
