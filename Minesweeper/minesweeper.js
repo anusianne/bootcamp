@@ -1,11 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.querySelector(".grid");
+  const levelChooser = document.getElementById("levelChooser");
   let width = 10;
   let squares = [];
   let isGameOver = false;
-  let bombAmount = 20;
   let flags = 0;
   //create a board
+
+  function createBoard(levelOption) {
+    let xSize = 0;
+    let ySize = 0;
+    let bombAmount = 0;
+    switch (levelOption) {
+      case "easy":
+        xSize = 8;
+        ySize = 8;
+        bombAmount = 10;
+        break;
+      case "medium":
+        xSize = 16;
+        ySize = 16;
+        bombAmount = 40;
+        break;
+      case "hard":
+        xSize = 30;
+        ySize = 16;
+        bombAmount = 99;
+        break;
+    }
+  }
   function createBoard() {
     //random bombs
     const bombsArray = Array(bombAmount).fill("bomb");
@@ -170,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         square.innerHTML = "💀";
       }
     });
-    window.location.reload();
+    setTimeout(window.location.reload(), 10000);
   }
   //check for win
   function checkForWin() {
