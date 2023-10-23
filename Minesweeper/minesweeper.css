@@ -6,12 +6,10 @@
   background-color: grey;
 }
 .grid div {
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
+  border: 1px solid black;
 }
 .checked {
   background-color: green;
-}
-.bomb {
-  background-color: red;
 }
