@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let width = 10;
   let squares = [];
   let isGameOver = false;
-  const bomb_Amount = 20;
+  const bombAmount = 20;
   //create a board
   function createBoard() {
-    //random bombs
+    //random bomb positions
     const bombsArray = Array(bombAmount).fill("bomb");
     const emptyArray = Array(width * width - bombAmount).fill("valid");
     console.log(bombsArray);
