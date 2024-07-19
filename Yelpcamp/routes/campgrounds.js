@@ -3,7 +3,7 @@ const router = express.Router();
 const catchAsync = require("../utilities/catchAsync.js");
 const ExpressError = require("../utilities/ExpressError.js");
 const Campground = require("../models/campground.js");
-const { campgroundSchema, reviewSchema } = require("../schemas.js");
+const { campgroundSchema } = require("../schemas.js");
 
 const validateCampground = (req, res, next) => {
   const { error } = campgroundSchema.validate(req.body);
