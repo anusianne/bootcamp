@@ -43,11 +43,10 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 app.post("/login", async (req, res) => {
-  const { password, username } = req.body;
-  const user = await User.findOne({ username });
-  const validPassword = await bcrypt.compare(password, user.password);
-  if (validPassword) {
-    req.session.user_id = user._id;
+  const { username, password } = req.body;
+  const foundUser = await User.findAndValidate(username, password);
+  if (foundUser) {
+    req.session.user_id = foundUser._id;
     res.redirect("/secret");
   } else {
     res.redirect("/login");
