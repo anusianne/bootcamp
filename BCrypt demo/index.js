@@ -28,6 +28,7 @@ app.post("/register", async (req, res) => {
     password: hash,
   });
   await user.save();
+  req.session.user_id = user._id;
   res.redirect("/");
 });
 
@@ -39,13 +40,16 @@ app.post("/login", async (req, res) => {
   const user = await User.findOne({ username });
   const validPassword = await bcrypt.compare(password, user.password);
   if (validPassword) {
-    res.send("YAAY, WELCOME");
+    req.session.user_id = user._id;
+    res.redirect("/secret");
   } else {
-    res.send("invalid.");
+    res.redirect("/login");
   }
 });
-
 app.get("/secret", (req, res) => {
+  if (!req.session.user_id) {
+    res.redirect("/login");
+  }
   res.send("THIS IS SECRET.");
 });
 
