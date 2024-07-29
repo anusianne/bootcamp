@@ -13,6 +13,13 @@ app.set("views", "views");
 app.use(express.urlencoded({ extended: true }));
 app.use(session({ secret: "not a good secret" }));
 
+const requireLogin = (req, res, next) => {
+  if (!req.session.user_id) {
+    return res.redirect("/login");
+  }
+  next();
+};
+
 app.get("/", (req, res) => {
   res.send("HOMEPAGE");
 });
@@ -52,13 +59,15 @@ app.post("/logout", (req, res) => {
   res.redirect("/login");
 });
 
-app.get("/secret", (req, res) => {
+app.get("/secret", requireLogin, (req, res) => {
   if (!req.session.user_id) {
     return res.redirect("/login");
   }
   res.render("secret");
 });
-
+app.get("/topsecret", requireLogin, (req, res) => {
+  res.send("TOP SECRET");
+});
 app.listen(3000, () => {
   console.log("serving your app.");
 });
