@@ -3,6 +3,7 @@ const app = express();
 const User = require("./models/user.js");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const session = require("express-session");
 
 mongoose.connect("mongodb://127.0.0.1:27017/loginDemo");
 
@@ -10,6 +11,7 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 
 app.use(express.urlencoded({ extended: true }));
+app.use(session({ secret: "not a good secret" }));
 
 app.get("/", (req, res) => {
   res.send("HOMEPAGE");
