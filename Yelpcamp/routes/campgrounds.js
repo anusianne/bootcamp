@@ -53,19 +53,20 @@ router.get(
 
 router.get(
   "/:id/edit",
+  isLoggedIn,
   catchAsync(async (req, res) => {
     const campground = await Campground.findById(req.params.id);
     if (!campground) {
       req.flash("error", "Cannot find that campground.");
       return res.redirect("/campgrounds");
     }
-    res.render("campgrounds/show", { campground });
     res.render("campgrounds/edit", { campground });
   })
 );
 
 router.put(
   "/:id",
+  isLoggedIn,
   validateCampground,
   catchAsync(async (req, res) => {
     const { id } = req.params;
@@ -73,15 +74,17 @@ router.put(
       ...req.body.campground,
     });
     req.flash("success", "Successfully updated campground.");
-    res.redirect(`/campgrounds/${campground._id}`);
+    return res.redirect(`/campgrounds/${campground._id}`);
   })
 );
 
 router.delete(
   "/:id",
+  isLoggedIn,
   catchAsync(async (req, res) => {
     const { id } = req.params;
     await Campground.findByIdAndDelete(id);
+    req.flash("success", "Successfully deleted campground.");
     res.redirect("/campgrounds");
   })
 );
