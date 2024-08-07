@@ -25,11 +25,19 @@ const seedDB = async () => {
       author: "66abce61d366f15a17212131",
       location: `${cities[random1000].city}, ${cities[random1000].state}`,
       title: `${sample(descriptors)} ${sample(places)}`,
-      image: `https://picsum.photos/400?random=${Math.random()}`,
+      images: [
+        {
+          url: "https://picsum.photos/400?random=0.09844221446729784",
+          filename: "YelpCamp/ahfnenvca4tha00h2ubt",
+        },
+        {
+          url: "https://picsum.photos/400?random=0.0512001142707561",
+          filename: "YelpCamp/ruyoaxgf72nzpi4y6cdi",
+        },
+      ],
       description: "lorem ipsum",
       price,
     });
-    console.log("Database saving record");
     await camp.save();
   }
 };
