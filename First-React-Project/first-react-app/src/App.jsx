@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Greeter from './Greeter'
 import Die from '../Die'
+import ListPicker from './ListPicker'
+import DoubleDice from './DoubleDice'
+import ColorList from './ColorList'
 
 function App() {
 
@@ -15,7 +18,12 @@ function App() {
         <Die numSides={20}/>
         <Die numSides={10}/>
         <Die/>
-
+      <ListPicker values={[1,2,3]}/>
+      <ListPicker values={['a','b','c']}/>
+      <DoubleDice/>
+      <DoubleDice/>
+      <DoubleDice/>
+      <ColorList colors={["red","pink","yellow"]}/>
       </div>
   )
 }
