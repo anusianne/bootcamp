@@ -7,12 +7,13 @@ import Die from '../Die'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
 import ColorList from './ColorList'
+import Game from './Game'
 
 function App() {
 
   return (
       <div>
-        <Greeter person="Bill" from="Colt"/>
+        {/* <Greeter person="Bill" from="Colt"/>
         <Greeter/>
         <Greeter person="Harry" from="Anaaa"/>
         <Die numSides={20}/>
@@ -23,7 +24,9 @@ function App() {
       <DoubleDice/>
       <DoubleDice/>
       <DoubleDice/>
-      <ColorList colors={["red","pink","yellow"]}/>
+      <ColorList colors={["red","pink","yellow"]}/> */}
+      <Game val1="🍑" val2="🍑" val3="🍑"/>
+      <Game val1="🍎" val2="🍉" val3="🍒"/>
       </div>
   )
 }
