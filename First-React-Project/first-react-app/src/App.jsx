@@ -8,12 +8,21 @@ import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
 import ColorList from './ColorList'
 import Game from './Game'
+import ShoppingList from './ShoppingList'
+
+const data = [
+  {id: 1, item: 'eggs', qty: 12, completed: false},
+  {id: 2, item: 'milks', qty: 1, completed: true},
+  {id: 3, item: 'chicken breasts', qty: 4, completed: false},
+  {id: 4, item: 'carrots', qty: 6, completed: true},
+]
+
 
 function App() {
 
   return (
       <div>
-        {/* <Greeter person="Bill" from="Colt"/>
+        {/* {/* <Greeter person="Bill" from="Colt"/>
         <Greeter/>
         <Greeter person="Harry" from="Anaaa"/>
         <Die numSides={20}/>
@@ -25,8 +34,9 @@ function App() {
       <DoubleDice/>
       <DoubleDice/>
       <ColorList colors={["red","pink","yellow"]}/> */}
-      <Game val1="🍑" val2="🍑" val3="🍑"/>
-      <Game val1="🍎" val2="🍉" val3="🍒"/>
+      {/* <Game val1="🍑" val2="🍑" val3="🍑"/>
+      <Game val1="🍎" val2="🍉" val3="🍒"/> */}
+      <ShoppingList items={data}/>
       </div>
   )
 }
