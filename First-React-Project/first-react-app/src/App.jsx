@@ -10,6 +10,8 @@ import ColorList from "./ColorList";
 import Game from "./Game";
 import ShoppingList from "./ShoppingList";
 import RentalProperties from "./RentalProperties";
+import Clicker from "./Clicker";
+import Form from "./Form";
 
 // const data = [
 //   { id: 1, item: "eggs", qty: 12, completed: false },
@@ -45,7 +47,12 @@ function App() {
       {/* <Game val1="🍑" val2="🍑" val3="🍑"/>
       <Game val1="🍎" val2="🍉" val3="🍒"/> */}
       {/* <ShoppingList items={data} /> */}
-      <RentalProperties propies={properties} />
+      {/* <RentalProperties propies={properties} /> */}
+      {/* <Clicker /> */}
+      {/* <Form /> */}
+      <Clicker message="HI!!!" buttonText="Please Click me" />
+      <br />
+      <Clicker message="Please Stop Clicking me!" buttonText="do not click" />
     </div>
   );
 }
