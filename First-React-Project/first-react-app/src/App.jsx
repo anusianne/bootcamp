@@ -12,6 +12,7 @@ import ShoppingList from "./ShoppingList";
 import RentalProperties from "./RentalProperties";
 import Clicker from "./Clicker";
 import Form from "./Form";
+import Counter from "./Counter";
 
 // const data = [
 //   { id: 1, item: "eggs", qty: 12, completed: false },
@@ -53,6 +54,7 @@ function App() {
       <Clicker message="HI!!!" buttonText="Please Click me" />
       <br />
       <Clicker message="Please Stop Clicking me!" buttonText="do not click" />
+      <Counter num={1} />
     </div>
   );
 }
