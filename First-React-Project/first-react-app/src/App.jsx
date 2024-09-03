@@ -13,6 +13,7 @@ import RentalProperties from "./RentalProperties";
 import Clicker from "./Clicker";
 import Form from "./Form";
 import Counter from "./Counter";
+import Toggler from "./Toggler";
 
 // const data = [
 //   { id: 1, item: "eggs", qty: 12, completed: false },
@@ -51,10 +52,11 @@ function App() {
       {/* <RentalProperties propies={properties} /> */}
       {/* <Clicker /> */}
       {/* <Form /> */}
-      <Clicker message="HI!!!" buttonText="Please Click me" />
+      {/* <Clicker message="HI!!!" buttonText="Please Click me" />
       <br />
       <Clicker message="Please Stop Clicking me!" buttonText="do not click" />
-      <Counter num={1} />
+      <Counter num={1} /> */}
+      <Toggler />
     </div>
   );
 }
