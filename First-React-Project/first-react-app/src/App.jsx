@@ -15,6 +15,7 @@ import Form from "./Form";
 import Counter from "./Counter";
 import Toggler from "./Toggler";
 import TogglerCounter from "./TogglerCounter";
+import Box from "./Box";
 
 // const data = [
 //   { id: 1, item: "eggs", qty: 12, completed: false },
@@ -31,6 +32,8 @@ const properties = [
   { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
+
+const colors = ["red", "blue", "black", "pink", "orange"];
 
 function App() {
   return (
@@ -58,7 +61,12 @@ function App() {
       <Clicker message="Please Stop Clicking me!" buttonText="do not click" />
       <Counter num={1} /> */}
       {/* <Toggler /> */}
-      <TogglerCounter />
+      {/* <TogglerCounter /> */}
+      <Box colors={colors} />
+      <Box colors={colors} />
+      <Box colors={colors} />
+      <Box colors={colors} />
+      <Box colors={colors} />
     </div>
   );
 }
