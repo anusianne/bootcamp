@@ -15,7 +15,8 @@
 // import Counter from "./Counter";
 // import Toggler from "./Toggler";
 // import TogglerCounter from "./TogglerCounter";
-import Box from "./Box";
+// import Box from "./Box";
+import GridOfBoxes from "./GridOfBoxes";
 
 // const data = [
 //   { id: 1, item: "eggs", qty: 12, completed: false },
@@ -33,7 +34,7 @@ import Box from "./Box";
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
 
-const colors = ["red", "blue", "black", "pink", "orange"];
+const colors = ["red", "blue", "black", "pink", "orange", "purple", "brown", "cyan", "teal", "yellow", "gold", "silver", "grey"];
 
 function App() {
   return (
@@ -62,11 +63,7 @@ function App() {
       <Counter num={1} /> */}
       {/* <Toggler /> */}
       {/* <TogglerCounter /> */}
-      <Box colors={colors} />
-      <Box colors={colors} />
-      <Box colors={colors} />
-      <Box colors={colors} />
-      <Box colors={colors} />
+      <GridOfBoxes colors={colors}/>
     </div>
   );
 }

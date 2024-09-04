@@ -7,7 +7,7 @@ function randomChoice(arr) {
 }
 
 export default function Box({colors}) {
-  const [color, setColor] = useState("green");
+const [color, setColor] = useState(randomChoice(colors));
  const randomColor = randomChoice(colors)
   const changeColor = () => {
     setColor(randomColor)

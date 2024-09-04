@@ -1,7 +1,4 @@
 .Box {
-  width: 500px;
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  width: 100px;
+  height: 100px;
 }
