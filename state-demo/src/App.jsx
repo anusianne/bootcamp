@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Counter from "./Counter";
 import ScoreKeeper from "./ScoreKeeper";
+import EmojiClicker from "./EmojiClicker";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +12,7 @@ function App() {
   return (
     <div>
       <h1>State demo</h1>
-      <ScoreKeeper />
+      <EmojiClicker />
     </div>
   );
 }
