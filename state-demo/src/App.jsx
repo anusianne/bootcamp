@@ -1,12 +1,9 @@
 import "./App.css";
-import ScoreKeeper from "./ScoreKeeper";
-
+import Dice from "./Dice";
 function App() {
-
   return (
     <div>
-      
-      <ScoreKeeper numPlayers={10} target={3}/>
+      <Dice dice={[3, 6, 1]} />
     </div>
   );
 }
