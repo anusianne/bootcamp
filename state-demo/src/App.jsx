@@ -1,9 +1,9 @@
 import "./App.css";
-import Dice from "./Dice";
+import LuckyN from "./LuckyN";
 function App() {
   return (
     <div>
-      <Dice dice={[3, 6, 1]} />
+      <LuckyN />
     </div>
   );
 }
