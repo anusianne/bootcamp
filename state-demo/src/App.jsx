@@ -2,6 +2,7 @@ import "./App.css";
 import LuckyN from "./LuckyN";
 import { sum } from "./utils";
 import Box from "./Box";
+import BoxGrid from "./BoxGrid";
 
 function lessThan4(dice) {
   return sum(dice) < 4;
@@ -16,9 +17,7 @@ function App() {
     <div>
       {/* <LuckyN winCheck={lessThan4} />
       <LuckyN winCheck={sameNumber} /> */}
-      <Box />
-      <Box />
-      <Box />
+      <BoxGrid />
     </div>
   );
 }
