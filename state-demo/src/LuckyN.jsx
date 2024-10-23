@@ -12,7 +12,7 @@ export default function LuckyN({ numDice = 2, winCheck }) {
       <h1>Lucky {isWinner && "You win!"}</h1>
       <Dice dice={dice} />
       {/* <button onClick={roll}>Re-roll Dice</button> */}
-      <Button clickFunc={roll} />
+      <Button clickFunc={roll} label="Re-Roll" />
     </main>
   );
 }

@@ -1,9 +1,9 @@
 import "./Button.css";
 
-export default function Button({ clickFunc }) {
+export default function Button({ clickFunc, label = "Click Me" }) {
   return (
     <button onClick={clickFunc} className="Button">
-      Click Me.
+      {label}
     </button>
   );
 }

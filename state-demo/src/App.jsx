@@ -1,6 +1,7 @@
 import "./App.css";
 import LuckyN from "./LuckyN";
 import { sum } from "./utils";
+import Box from "./Box";
 
 function lessThan4(dice) {
   return sum(dice) < 4;
@@ -13,8 +14,11 @@ function sameNumber(dice) {
 function App() {
   return (
     <div>
-      <LuckyN winCheck={lessThan4} />
-      <LuckyN winCheck={sameNumber} />
+      {/* <LuckyN winCheck={lessThan4} />
+      <LuckyN winCheck={sameNumber} /> */}
+      <Box />
+      <Box />
+      <Box />
     </div>
   );
 }
