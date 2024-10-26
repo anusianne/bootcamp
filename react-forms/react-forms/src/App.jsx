@@ -1,5 +1,6 @@
 import UsernameForm from "./UsernameForm";
-import BetterSignupForm from "./BetterSignupForm"; 
+import BetterSignupForm from "./BetterSignupForm";
+import ShoppingListForm from "./ShoppingListForm"; 
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <UsernameForm />
       <BetterSignupForm/>
+      <ShoppingListForm/>
     </div>
   );
 }
