@@ -1,34 +1,43 @@
 import { useState } from "react";
-
-export default function ShoppingListForm() {
-  const [formData, setFormData] = useState({ product: "", qty: 0 });
-  const handleChange = (e) => {
+function ShoppingListForm({ addItem }) {
+  const [formData, setFormData] = useState({ product: "", quantity: 0 });
+  const handleChange = (evt) => {
     setFormData((currData) => {
-      return { ...currData, [e.target.name]: e.target.value };
+      return {
+        ...currData,
+        [evt.target.name]: evt.target.value,
+      };
     });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addItem(formData);
+    setFormData({ product: "", quantity: 0 });
+  };
   return (
-    <form action="">
-        <h1>Product is: {formData.product}</h1>
-      <label htmlFor="product">Product name: </label>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="product">Product Name</label>
       <input
         type="text"
         placeholder="product name"
         name="product"
         id="product"
         onChange={handleChange}
-        value = {formData.product}
+        value={formData.product}
       />
-      <h1>Qty is: {formData.qty}</h1>
-      <label htmlFor="qty">Product name: </label>
+      <label htmlFor="quantity">Quantity</label>
       <input
         type="number"
         placeholder="1"
-        name="qty"
-        id="qty"
+        name="quantity"
+        id="quantity"
         onChange={handleChange}
-        value = {formData.qty}
+        value={formData.quantity}
       />
+      <button>Add Item</button>
     </form>
   );
 }
+
+export default ShoppingListForm;
