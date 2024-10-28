@@ -3,8 +3,8 @@ import ShoppingListForm from "./ShoppingListForm";
 
 export default function ShoppingList() {
   const [items, setItems] = useState([
-    { id: 1, product: "Bananas", qty: 8 },
-    { id: 1, product: "Eggss", qty: 20 },
+    { id: 1, product: "Bananas", quantity: 8 },
+    { id: 2, product: "Eggss", quantity: 20 },
   ]);
   const addItem = (item) => {
     setItems((currItems) => {
@@ -17,7 +17,7 @@ export default function ShoppingList() {
       <ul>
         {items.map((i) => (
           <li key={i.id}>
-            {i.product} - {i.qty}
+            {i.product} - {i.quantity}
           </li>
         ))}
       </ul>
