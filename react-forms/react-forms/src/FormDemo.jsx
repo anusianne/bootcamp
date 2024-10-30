@@ -14,13 +14,13 @@ export default function FormDemo() {
   const handleError = (errors) => {};
 
   const registerOptions = {
-    name: { required: "Name cannot be blank. " },
+    username: { required: "Username cannot be blank. " },
     email: { required: "Email cannot be blank." },
     password: {
       required: "Password is required.",
       minLength: {
         value: 10,
-        message: "Passwor must be at least 10 characters",
+        message: "Password must be at least 10 characters",
       },
     },
     quantity: {
@@ -36,9 +36,37 @@ export default function FormDemo() {
   return (
     <form onSubmit={handleSubmit(handleRegistration, handleError)}>
       <div>
-        <label htmlFor="username">
-          <input type="text" id="username"></input>
-        </label>
+        <label>Username: </label>
+        <input
+          type="text"
+          name="username"
+          {...register("username", registerOptions.username)}
+        />
+        <small className="text-danger">
+          {errors?.username && errors.username.message}
+        </small>
+      </div>
+      <div>
+        <label>Email: </label>
+        <input
+          type="email"
+          name="email"
+          {...register("email", registerOptions.email)}
+        />
+        <small className="text-danger">
+          {errors?.email && errors.email.message}
+        </small>
+      </div>
+      <div>
+        <label>Password: </label>
+        <input
+          type="password"
+          name="password"
+          {...register("password", registerOptions.password)}
+        />
+        <small className="text-danger">
+          {errors?.password && errors.password.message}
+        </small>
       </div>
       <button>Submit</button>
     </form>
