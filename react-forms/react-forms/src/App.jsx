@@ -3,7 +3,8 @@
 // import ShoppingListForm from "./ShoppingListForm";
 // import ShoppingList from "./ShoppingList";
 // import FormDemo from "./FormDemo";
-import Counter from "./Counter";
+// import Counter from "./Counter";
+import QuoteFetcher from "./QuoteFetcher";
 import "./App.css";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* /* <BetterSignupForm /> */}
       {/* <ShoppingList /> */}
       {/* <FormDemo /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <QuoteFetcher />
     </div>
   );
 }
