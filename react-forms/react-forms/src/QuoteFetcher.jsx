@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const RANDOM_QUOTE_URL = "https://inspo-quotes-api.herokuapp.com/quotes/random";
 
-export default function FetchQuote() {
-  const [quote, setQuote] = useState({});
+export default function QuoteFetcher() {
+  const [quote, setQuote] = useState({ text: "", author: "" });
+
+  useEffect(() => {
+    async function getInitialQuote() {
+      const response = await fetch(RANDOM_QUOTE_URL);
+      const jsonResponse = await response.json();
+      const randomQuote = jsonResponse.quote;
+      setQuote(randomQuote);
+    }
+    getInitialQuote();
+  }, []);
+
   async function fetchQuote() {
     const response = await fetch(RANDOM_QUOTE_URL);
     const jsonResponse = await response.json();
