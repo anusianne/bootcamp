@@ -1,12 +1,10 @@
 import "./App.css";
-import RatingDemo from "./RatingDemo";
-import Button from "@mui/material/Button";
+import FormDemo from "./FormDemo";
 
 function App() {
   return (
     <div>
-      {/* <Button variant="contained">Contained</Button> */}
-      <RatingDemo />
+      <FormDemo />
     </div>
   );
 }
