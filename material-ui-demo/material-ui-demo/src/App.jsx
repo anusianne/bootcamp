@@ -1,8 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import RatingDemo from "./RatingDemo";
+import Button from "@mui/material/Button";
 
-function App() {}
+function App() {
+  return (
+    <div>
+      {/* <Button variant="contained">Contained</Button> */}
+      <RatingDemo />
+    </div>
+  );
+}
 
 export default App;
